@@ -32,6 +32,7 @@ const htmlBlob = computed(() => {
             window.parent.postMessage({ type: 'resize', height }, '*');
           };
           notify()
+          window.addEventListener('load', notify);
           new MutationObserver(notify).observe(document.body, {
             subtree: true, childList: true, attributes: true
           });
