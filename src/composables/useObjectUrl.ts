@@ -1,11 +1,4 @@
-import {
-  onScopeDispose,
-  readonly,
-  shallowRef,
-  toValue,
-  watch,
-  type MaybeRefOrGetter,
-} from "vue";
+import { onScopeDispose, readonly, shallowRef, toValue, watch, type MaybeRefOrGetter } from "vue";
 
 /**
  * Reactive URL representing an object.
