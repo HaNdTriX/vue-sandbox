@@ -54,11 +54,11 @@ onMounted(() => {
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
 
 .playground-layout {
   /* Vitepress nav bar is ~64px */
-  height: calc(100vh - 64px); 
+  height: calc(100vh - 64px);
   display: flex;
   flex-direction: column;
   background-color: var(--vp-c-bg);
@@ -117,7 +117,8 @@ onMounted(() => {
   background: #8b5cf6;
 }
 
-.editor-container, .preview-container {
+.editor-container,
+.preview-container {
   flex: 1;
   position: relative;
   overflow: hidden; /* Keep content contained */
@@ -129,7 +130,7 @@ onMounted(() => {
 }
 :deep(.cm-editor) {
   height: 100%;
-  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+  font-family: "Fira Code", "JetBrains Mono", monospace;
   font-size: 0.9rem;
 }
 
@@ -172,21 +173,21 @@ onMounted(() => {
 
 @media (max-width: 1024px) {
   .playground-layout {
-      height: auto;
-      min-height: calc(100vh - 64px);
+    height: auto;
+    min-height: calc(100vh - 64px);
   }
 
   .main-content {
     flex-direction: column;
     overflow-y: auto;
   }
-  
+
   .panel {
     min-height: 400px;
   }
-  
+
   .preview-container {
-      min-height: 600px;
+    min-height: 600px;
   }
 }
 </style>

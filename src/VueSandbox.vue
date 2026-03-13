@@ -47,8 +47,7 @@ const objectUrl = useObjectUrl(htmlBlob);
 
 // Sync htmlBlob height with iframe height
 useMessage((event) => {
-  if (event.origin !== window.location.origin && event.origin !== "null")
-    return;
+  if (event.origin !== window.location.origin && event.origin !== "null") return;
   if (event.data?.type !== "resize") return;
   if (typeof event.data.height !== "number") return;
   iframeHeight.value = Math.min(event.data.height, props.maxHeight);

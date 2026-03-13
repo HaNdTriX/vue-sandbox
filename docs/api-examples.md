@@ -18,8 +18,8 @@ yarn add vue-sandbox
 
 ```vue
 <script setup>
-import { ref } from 'vue'
-import VueSandbox from 'vue-sandbox'
+import { ref } from "vue";
+import VueSandbox from "vue-sandbox";
 
 const htmlCode = ref(`
   <style>
@@ -28,23 +28,23 @@ const htmlCode = ref(`
   </style>
   <h1>Hello from the Sandbox!</h1>
   <button onclick="document.body.innerHTML += '<p>Clicked!</p>'">Click Me</button>
-`)
+`);
 </script>
 
 <template>
-  <VueSandbox 
-    :code="htmlCode" 
+  <VueSandbox
+    :code="htmlCode"
     :max-height="800"
-    style="width: 100%; border: 1px solid #ccc; border-radius: 8px;" 
+    style="width: 100%; border: 1px solid #ccc; border-radius: 8px;"
   />
 </template>
 ```
 
 ## Props
 
-| Prop | Type | Default | Description |
-| --- | --- | --- | --- |
-| `code` | `string` | **Required** | The raw HTML/CSS/JS code to render inside the sandbox. |
-| `maxHeight` | `number` | `2000` | The maximum height (in pixels) the iframe is allowed to grow to. |
-| `autoHeight` | `boolean` | `true` | Whether to automatically resize the iframe based on content. |
-| `style` | `HTMLAttributes["style"]` | `undefined` | Optional inline styles applied to the iframe element. |
+| Prop         | Type                      | Default      | Description                                                      |
+| ------------ | ------------------------- | ------------ | ---------------------------------------------------------------- |
+| `code`       | `string`                  | **Required** | The raw HTML/CSS/JS code to render inside the sandbox.           |
+| `maxHeight`  | `number`                  | `2000`       | The maximum height (in pixels) the iframe is allowed to grow to. |
+| `autoHeight` | `boolean`                 | `true`       | Whether to automatically resize the iframe based on content.     |
+| `style`      | `HTMLAttributes["style"]` | `undefined`  | Optional inline styles applied to the iframe element.            |
