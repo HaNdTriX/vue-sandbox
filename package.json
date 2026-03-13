@@ -5,13 +5,13 @@
   "description": "A starter for creating a Vue component library.",
   "author": "Henrik Wenz <handtrix@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/author/library#readme",
+  "homepage": "https://github.com/handtrix/library#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/author/library.git"
+    "url": "git+https://github.com/handtrix/library.git"
   },
   "bugs": {
-    "url": "https://github.com/author/library/issues"
+    "url": "https://github.com/handtrix/library/issues"
   },
   "exports": {
     ".": "./dist/index.js",

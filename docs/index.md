@@ -6,6 +6,9 @@ hero:
   name: "vue-sandbox"
   text: "Secure, auto-resizing iframe component for Vue 3"
   tagline: Run untrusted HTML/CSS/JS with confidence.
+  image:
+    src: /logo.png
+    alt: Vue Sandbox Logo
   actions:
     - theme: brand
       text: Get Started

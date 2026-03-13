@@ -7,6 +7,7 @@ export default defineConfig({
   // Base URL for GitHub Pages deployment (matches the repository name)
   base: "/vue-sandbox/",
   themeConfig: {
+    logo: '/logo.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
