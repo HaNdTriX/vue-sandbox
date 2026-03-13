@@ -2,7 +2,7 @@
   "name": "vue-sandbox",
   "type": "module",
   "version": "0.0.0",
-  "description": "A starter for creating a Vue component library.",
+  "description": "A Vue component for securely rendering untrusted HTML, CSS, and JavaScript inside an isolated iframe.",
   "author": "Henrik Wenz <handtrix@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/handtrix/library#readme",
