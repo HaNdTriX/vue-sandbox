@@ -4,3 +4,7 @@ dist
 .DS_Store
 tests/__screenshots__
 .vitest-attachments
+docs/.vitepress/cache
+docs/.vitepress/dist
+docs/.vitepress/.temp
+docs/.vitepress/.cache  
